@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="contact">
+
+<head>
+    <title>Contacts App</title>
+    <link rel="stylesheet" href="/Scripts/bootstrap.min.css">
+</head>
+<style>
+    li {
+        padding-left: 20px;
+        list-style: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <ul style="display: inline-flex">
+                <li ui-sref='Home'>Home</li>
+                <li ui-sref='NewContact'>Create New Contact</li>
+                <li ui-sref='Contacts'>View Contacts</li>
+            </ul>
+        </div>
+    </header>
+    <div ui-view></div>
+    <footer class="col-md-12">
+        <div>Maritza Alas - <a href="mailto:alas.maritza.j@gmail.com" style="text-decoration: none">alas.maritza.j@gmail.com</a></div>
+
+    </footer>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="/Scripts/js/angular.min.js"></script>
+    <script type="text/javascript" src="/Scripts/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/js/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/Scripts/js/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Scripts/App/ContactModule.js"></script>
+    <script type="text/javascript" src="/Scripts/App/ContactController.js"></script>
+    <script type="text/javascript" src="/Scripts/App/ContactFactory.js"></script>
+    <script type="text/javascript" src="/Scripts/App/ContactConfig.js"></script>
+    <script type="text/javascript" src="/Scripts/App/ContactRun.js"></script>
+    <script type="text/javascript" src="/Scripts/App/ViewController.js"></script>
+</body>
+
+</html>

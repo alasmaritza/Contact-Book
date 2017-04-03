@@ -1,0 +1,19 @@
+<div>
+    <form class="col-md-6">
+        <div class="form-group">
+            <label>Name:</label>
+            <input ng-model="name.firstName" class="form-control" type="text" placeholder="First Name" name="firstName" />
+            <br>
+            <input ng-model="name.lastName" class="form-control" type="text" placeholder="Last Name" name="lastName" />
+        </div>
+        <div class="form-group">
+            <label>Phone Number:</label>
+            <input ng-model="name.phoneNumber" class="form-control" type="text" name="phoneNumber" />
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input ng-model="name.email" class="form-control" type="text" name="email" />
+        </div>
+        <button class="btn" type="submit" ng-click="contact.create(name)">Create New Contact</button>
+    </form>
+</div>

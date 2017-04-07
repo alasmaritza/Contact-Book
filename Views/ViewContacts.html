@@ -1,5 +1,5 @@
-<div>
-    <h1>{{view.person.firstName}} {{view.person.lastName}}</h1>
-    <p>Phone: {{view.person.phoneNumber}}</p>
-    <p>Email: {{view.person.email}}</p>
+<div ng-repeat="person in view.person">
+    <h1>{{person.firstName}} {{person.lastName}}</h1>
+    <p>Phone: {{person.phoneNumber}}</p>
+    <p>Email: {{person.email}}</p>
 </div>

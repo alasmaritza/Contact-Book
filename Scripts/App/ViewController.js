@@ -13,8 +13,7 @@
         contactFactory.getContacts().then(displayContact);
 
         function displayContact(data) {
-            vm.person = data.data[0];
-            console.log(vm.person);
+            vm.person = data.data;
         }
     }
 })();

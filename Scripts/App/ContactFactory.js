@@ -10,7 +10,8 @@
         var urlPrefix = 'http://58e02f412043701200d0b326.mockapi.io/Contacts';
         var service = {
             getContacts: getContacts,
-            newContact: newContact
+            newContact: newContact,
+            removeContact: removeContact
         }
         return service
 
@@ -26,5 +27,15 @@
             }
             return $http(config);
         }
+
+        function removeContact(id) {
+            var config = {
+                method: 'DELETE',
+                url: urlPrefix + '/People/' + id,
+                data: id
+            }
+            return $http(config);
+        }
+
     }
 })();

@@ -27,11 +27,6 @@
 
             })
 
-            .state('Edit', {
-                url: '/EditContact',
-                templateUrl: 'EditContact.html',
-                controller: 'editController as edit'
-            })
     }
 
 })();

@@ -11,7 +11,8 @@
         var service = {
             getContacts: getContacts,
             newContact: newContact,
-            removeContact: removeContact
+            removeContact: removeContact,
+            updateContact: updateContact
         }
         return service
 
@@ -33,6 +34,15 @@
                 method: 'DELETE',
                 url: urlPrefix + '/People/' + id,
                 data: id
+            }
+            return $http(config);
+        }
+
+        function updateContact(name, id) {
+            var config = {
+                method: 'PUT',
+                url: urlPrefix + '/People/' + id,
+                data: name
             }
             return $http(config);
         }
